@@ -2687,10 +2687,6 @@
         text-decoration: underline
     }
 
-    .c46 {
-        padding: 72pt 72pt 72pt 72pt
-    }
-
     .c3 {
         border: 1px solid black;
         margin: 5px
@@ -2939,10 +2935,11 @@
 </head>
 
 <body class="c17 c46">
+	<div class="container"><div class="row">
     <div>
         <p class="c12 c15"><span class="c6"></span></p>
     </div>
-    <p class="c35 c45 title" id="h.47zzyxsol8z7"><span class="c23">We Demand Action at the Yale School of Medicine. </span></p>
+    <h1 class="title" id="h.47zzyxsol8z7"><span>We Demand Action at the Yale School of Medicine. </span></h1>
     <h2 class="c25" id="h.fwwvb84o1pt7"><span>Introduction</span></h2>
     <p class="c12"><span class="c6">The recent, publicly documented murders of multiple Black people by the police have laid bare the urgent and mortal threat posed by institutionalized racism and white supremacy to Black lives. Administrators at Yale School of Medicine (YSM) and Yale University responded to these events by sending us numerous emails expressing their shock, anger, and fear, and identified these incidents as &quot;reminders of a Yale gone-by.&quot; This characterization is objectively untrue: institutionalized racism at Yale is alive and well, and the current administration is complicit in maintaining it.</span></p>
     <p class="c12"><span>Ten years ago, Black and brown students and faculty wrote </span><span class="c28"><a class="c4" href="https://www.google.com/url?q=https://drive.google.com/file/d/1Fg5_4ipKnAye6QmxeXl3J-jc4PpBzFUg/view?usp%3Dsharing&amp;sa=D&amp;ust=1592936420568000">an extensive report</a></span><sup><a href="#ftnt1" id="ftnt_ref1">[1]</a></sup><span>&nbsp;demanding immediate curricular reform and creation of a multidisciplinary research center addressing structural determinants of health inequity and injustice. That report, like so many before it, was buried and ignored. Five years later, a group of students called NextYSM stood up at a town hall very similar to this one and delivered </span><span class="c28"><a class="c4" href="https://www.google.com/url?q=https://docs.google.com/document/d/1EDefEGQ3KAwrhjgVPDr4nlHuQT3K-sgsgXU7YR9DSlA/edit&amp;sa=D&amp;ust=1592936420569000">a set of demands</a></span><sup><a href="#ftnt2" id="ftnt_ref2">[2]</a></sup><span>&nbsp;to Dean Alpern that outlined concrete steps to address systemic racism at YSM. </span><span class="c28"><a class="c4" href="https://www.google.com/url?q=https://drive.google.com/file/d/1k0Xx4YeqJdRVHjSMJ0SejfXHYUgVgkQL/view?usp%3Dsharing&amp;sa=D&amp;ust=1592936420569000">Another detailed report</a></span><span>&nbsp;in 2018</span><sup><a href="#ftnt3" id="ftnt_ref3">[3]</a></sup><span class="c6">&nbsp;formally outlined very similar priorities. It is now 2020. After 10 years of endless meetings and committees, considerable effort from students, faculty, and the Office of Diversity, Inclusion, Community Engagement, and Equity (DICE), little has changed. Our curriculum remains racist. Our faculty is overwhelmingly white. A private police force employed by this University is empowered to terrorize Black and brown students and to use deadly force against the citizens of New Haven, yet is accountable to neither group. And, of course, Yale commands the resources of a small country in a city which struggles to pay for primary education. </span></p>
@@ -3969,7 +3966,7 @@
     <div>
         <p class="c14"><a href="#ftnt_ref88" id="ftnt88">[88]</a><span class="c10">&nbsp;</span><span class="c22">Morley, Christopher P, Emily M Mader, Timothy Smilnak, Andrew Bazemore, Stephen Petterson, Jose E Rodriguez, and Kendall M Campbell. 2015. &ldquo;The Social Mission in Medical School Mission Statements: Associations with Graduate Outcomes.&rdquo; </span><span class="c13">Family Medicine</span><span class="c22">&nbsp;47 (6): 427&ndash;34</span></p>
     </div>
- 
+ 	</div></div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -3990,7 +3987,7 @@
 
 			    wrapper.children(":not(h2)").wrapAll('<div class="card-body"></div>')
 			    wrapper.find('.card-body > :not(h4)').wrapAll('<div id="collapse-'+section_id+'" class="collapse '+visibility+'" />');
-			    wrapper.children("h2").removeClass().addClass('card-header').wrapInner('<a data-toggle="collapse" href="#" data-target="#collapse-'+section_id+'">')
+			    wrapper.children("h2").removeClass().addClass('card-header').wrapInner('<a data-toggle="collapse" href="#" data-target="#collapse-'+section_id+'" title="Click to expand">')
 			    //wrapper.children("h2").removeClass().addClass('card-header').attr("data-toggle","collapse").attr("data-target","#collapse-'+section_id+'") //.wrapInner('<button class="btn btn-link" data-toggle="collapse" data-target="#collapse-'+section_id+'">')
 
 			    section_id++;
