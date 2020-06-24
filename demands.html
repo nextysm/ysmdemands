@@ -4064,7 +4064,7 @@
 
             $('sup > a').each(function() {
                 href = $(this).attr("href")
-                content = $(href).parent('p').children(':not('+href+')').map(function(x) { 
+                content = $(href).parents('div').first().children(':not('+href+')').map(function(x) { 
                     return $(this).html(); 
                 })
 
