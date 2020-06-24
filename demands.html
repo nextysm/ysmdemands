@@ -2,6 +2,7 @@
 
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>We Demand Action at YSM</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style type="text/css">
     ol.lst-kix_6f0ajjbogbna-6.start {
@@ -2916,8 +2917,8 @@
     <p class="c0"><span class="c2">Today, we again demand action. We demand a YSM that is anti-racist, a YSM that actively dismantles its own complicity in systemic and structural violence against Black people. We acknowledge that racism does not act within a vacuum, but rather is enmeshed with other systems of oppression that must be dismantled together. Although many of our concerns extend beyond the School of Medicine&ndash;&ndash;to Yale University or to Yale-New Haven Health system (YNHHS)&ndash;&ndash;these bureaucratic entanglements are no excuse for inaction. We expect that our Deans will actively work to ensure fulfillment of these demands across these artificial boundaries, just as they did for the response to COVID-19. The actions we demand are not radical. They are the bare minimum essential steps toward rectifying the inequities and harm perpetuated by this institution. They are not negotiable.</span></p>
     <p class="c0"><span>We have 9 core demands, each with a detailed list of actionable items. </span><span>All unmet items from the original 2015 NextYSM demands are included in these significantly expanded demands.</span></p>
     <p class="c0 c33"><span class="c2"></span></p>
-    <h4 class="c23" id="h.ngjx4xhv9ajd"><p><span>Sign the demands: </span><span class="c13"><a class="c4" href="https://www.google.com/url?q=http://ysmdemands.org/sign&amp;sa=D&amp;ust=1592959614448000">ysmdemands.org/sign</a></span></p>
-    	<p><span>Link to this document: </span><span class="c13"><a class="c4" href="https://www.google.com/url?q=http://ysmdemands.org&amp;sa=D&amp;ust=1592959614448000">ysmdemands.org</a></span><span>&nbsp;</span><span>&nbsp;</span></p>
+    <h4 class="c23" id="h.ngjx4xhv9ajd"><p><span>Sign the demands: </span><span class="c13"><a class="c4" href="http://ysmdemands.org/sign" target="_top">ysmdemands.org/sign</a></span></p>
+    	<p><span>Link to this document: </span><span class="c13"><a class="c4" href="http://ysmdemands.org" target="_top">ysmdemands.org</a></span><span>&nbsp;</span><span>&nbsp;</span></p>
     </h4>
     <hr style="page-break-before:always;display:none;">
     <h2 class="c30" id="h.kdqux4pg7cdi"><span class="c7 c5">1. We demand increased support for the wellbeing of underrepresented students in medicine. </span></h2>
@@ -4036,6 +4037,28 @@
             var section_id = 0; 
             $('h2').filter(function() { return $(this).text().trim() == "" }).remove()
             $('h2 span').removeClass()
+
+            $('sup > a').each(function() {
+                href = $(this).attr("href")
+                content = $(href).parents('div').first().children(':not('+href+')').map(function(x) { 
+                    return $(this).html(); 
+                })
+
+                $(this).popover({
+                    content: Array.prototype.join.apply(content),
+                    trigger: 'hover',
+                    html: true
+                })
+            })
+
+            $('a').each(function() {
+            	$this = $(this)
+            	href = $this.attr("href")
+            	if (href[0] != '#' && !$this.attr('target')) {
+            		$this.attr('target','_blank')
+            	}
+            })
+
             $('ul').removeClass()
             $('body h2').each(function(){ 
                 var wrapper = $(this)
@@ -4062,18 +4085,7 @@
                 section_id++;
             });
 
-            $('sup > a').each(function() {
-                href = $(this).attr("href")
-                content = $(href).parents('div').first().children(':not('+href+')').map(function(x) { 
-                    return $(this).html(); 
-                })
 
-                $(this).popover({
-                    content: Array.prototype.join.apply(content),
-                    trigger: 'hover',
-                    html: true
-                })
-            })
 
             // var redirect_prefix = 'https://www.google.com/url?q='
             // $('a').each(function() { 
